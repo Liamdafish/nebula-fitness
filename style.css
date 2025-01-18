@@ -1,0 +1,93 @@
+/* General page styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Fullscreen particles container */
+#particles-js {
+  position: fixed;      /* Fixes the particles in place */
+  top: 0;               /* Aligns the particles at the top */
+  left: 0;              /* Aligns the particles to the left */
+  width: 100%;          /* Full width */
+  height: 100%;         /* Full height */
+  z-index: -1;          /* Places the particles behind all other content */
+}
+
+/* Content styling */
+.content {
+  position: relative;
+  z-index: 1;           /* Makes sure content stays on top of the particles */
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+main {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency to see particles behind */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+/* Navigation (tabbar) styling */
+.tabbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  z-index: 2; /* Keeps sidebar above the particles */
+}
+
+.tabbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tabbar li {
+  margin: 15px 0;
+}
+
+.tabbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile Responsiveness: Adjust content for smaller screens */
+@media (max-width: 768px) {
+  .tabbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    margin-top: 80px; /* Adjust to prevent overlap with the tabbar */
+  }
+}
