@@ -3,75 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Today | Astronaut Fitness Tracker</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Complete Page with Particle Effect</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="tabbar">
-    <a class="tab-link" href="today.html">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
-      </svg>
-      <span>Today</span>
+  <div class="tabbar">
+    <a href="#" class="active">
+      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
+      <span>Dashboard</span>
     </a>
-    <a class="tab-link" href="week.html">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-      </svg>
-      <span>Week</span>
+    <a href="#">
+      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
+      <span>Progress</span>
     </a>
-    <a class="tab-link" href="exercises.html">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2-2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
-      </svg>
-      <span>Exercises</span>
-    </a>
-    <a class="tab-link" href="stats.html">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2-2 0 01-2-2z"></path>
-      </svg>
-      <span>Stats</span>
-    </a>
-    <a class="tab-link" href="achievements.html">
-      <img src="trophy.png" alt="Trophy Icon" class="trophy-icon">
+    <a href="#">
+      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
       <span>Achievements</span>
     </a>
-    <a class="tab-link" href="settings.html">
-      <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path fill-rule="evenodd" fill="currentColor" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-      </svg>
-      <span>Settings</span>
-    </a>
-</nav>
+  </div>
 
   <div class="content">
     <header>
-      <h1>Welcome to Astronaut Fitness Tracker</h1>
+      <h1>Particle Effect Example with Full Features</h1>
     </header>
-    <main>
-      <p>
-        Welcome to the Astronaut Fitness Tracker, your ultimate companion for staying fit and
-        tracking your progress. Select an option from the sidebar to get started!
-      </p>
-      <section>
-        <h2>Features</h2>
-        <ul>
-          <li>Log your daily fitness data</li>
-          <li>Track your weekly progress</li>
-          <li>Explore custom exercise routines</li>
-          <li>Analyze detailed statistics</li>
-          <li>Manage your profile and settings</li>
-        </ul>
-      </section>
-    </main>
+
+    <section>
+      <div class="wizard-progress">
+        <div class="step complete">
+          <div class="node"></div>
+          <span>Step 1</span>
+        </div>
+        <div class="line complete"></div>
+        <div class="step in-progress">
+          <div class="node"></div>
+          <span>Step 2</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <div class="achievements">
+        <div class="achievement unlocked">
+          <img class="unlocked" src="https://via.placeholder.com/200" alt="Achievement 1">
+          <p>Achievement 1</p>
+        </div>
+        <div class="achievement locked">
+          <img class="locked" src="https://via.placeholder.com/200" alt="Achievement 2">
+          <p>Achievement 2</p>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <script src="js/script.js"></script>
+  <!-- JavaScript for Particle Effect -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      for (let i = 0; i < 100; i++) {
+        let particle = document.createElement('div');
+        particle.classList.add('particle');
+        document.body.appendChild(particle);
+        
+        let size = Math.random() * 5 + 2 + 'px'; // Small particles
+        let left = Math.random() * window.innerWidth + 'px';
+        let top = Math.random() * window.innerHeight + 'px';
+        let animationDelay = Math.random() * 10 + 's';
+        
+        particle.style.width = size;
+        particle.style.height = size;
+        particle.style.left = left;
+        particle.style.top = top;
+        particle.style.animationDelay = animationDelay;
+      }
+    });
+  </script>
 </body>
 </html>
