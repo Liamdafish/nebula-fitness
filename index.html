@@ -1,82 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Complete Page with Particle Effect</title>
-  <!-- Link to External CSS -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Fitness</title>
+    <!-- Link to the styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="tabbar">
-    <a href="#" class="active">
-      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
-      <span>Dashboard</span>
-    </a>
-    <a href="#">
-      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
-      <span>Progress</span>
-    </a>
-    <a href="#">
-      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
-      <span>Achievements</span>
-    </a>
-  </div>
-
-  <div class="content">
     <header>
-      <h1>Particle Effect Example with Full Features</h1>
+        <h1>Welcome to Nebula Fitness</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="today.html">Today's Workout</a></li>
+                <li><a href="week.html">Weekly Plan</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="exercises.html">Exercises</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-      <div class="wizard-progress">
-        <div class="step complete">
-          <div class="node"></div>
-          <span>Step 1</span>
-        </div>
-        <div class="line complete"></div>
-        <div class="step in-progress">
-          <div class="node"></div>
-          <span>Step 2</span>
-        </div>
-      </div>
-    </section>
+    <main>
+        <section>
+            <h2>Your Fitness Journey Starts Here</h2>
+            <p>Explore workouts, track your progress, and achieve your goals with Nebula Fitness.</p>
+        </section>
+    </main>
 
-    <section>
-      <h2>Achievements</h2>
-      <div class="achievements">
-        <div class="achievement unlocked">
-          <img class="unlocked" src="https://via.placeholder.com/200" alt="Achievement 1">
-          <p>Achievement 1</p>
-        </div>
-        <div class="achievement locked">
-          <img class="locked" src="https://via.placeholder.com/200" alt="Achievement 2">
-          <p>Achievement 2</p>
-        </div>
-      </div>
-    </section>
-  </div>
+    <footer>
+        <p>&copy; 2025 Nebula Fitness. All rights reserved.</p>
+    </footer>
 
-  <!-- JavaScript for Particle Effect -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      for (let i = 0; i < 100; i++) {
-        let particle = document.createElement('div');
-        particle.classList.add('particle');
-        document.body.appendChild(particle);
-        
-        let size = Math.random() * 5 + 2 + 'px'; // Small particles
-        let left = Math.random() * window.innerWidth + 'px';
-        let top = Math.random() * window.innerHeight + 'px';
-        let animationDelay = Math.random() * 10 + 's';
-        
-        particle.style.width = size;
-        particle.style.height = size;
-        particle.style.left = left;
-        particle.style.top = top;
-        particle.style.animationDelay = animationDelay;
-      }
-    });
-  </script>
+    <!-- Link to the main JavaScript file -->
+    <script src="script.js"></script>
 </body>
 </html>
