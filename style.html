@@ -43,21 +43,22 @@
       }
     }
 
-    /* Sidebar Styling */
-    .tabbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100vh;
-      width: 250px;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(12px);
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      padding: 1rem 0;
-      z-index: 2; /* Sidebar should be above particles */
-    }
+   /* Sidebar Icon Styling */
+.tabbar .icon {
+  width: 20px; /* Set icon width to 20px */
+  height: 20px; /* Set icon height to 20px */
+  margin-bottom: 0.5rem;
+  fill: currentColor;
+}
+
+/* Sidebar Trophy Icon Styling */
+.tabbar .trophy-icon {
+  width: 16px; /* Set trophy icon width to 16px */
+  height: 16px; /* Set trophy icon height to 16px */
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
 
     img.trophy-icon {
       width: 30px;
