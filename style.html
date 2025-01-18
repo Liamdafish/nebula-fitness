@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Particle Effect</title>
+  <title>Complete Page with Particle Effect</title>
   <style>
     /* General Reset */
     * {
@@ -49,7 +49,7 @@
       top: 0;
       left: 0;
       height: 100vh;
-      width: 250px; /* Fixed width for the navbar */
+      width: 250px;
       background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(12px);
       display: flex;
@@ -62,7 +62,7 @@
       width: 30px;
       height: auto;
       display: inline-block;
-      margin-bottom: px;
+      margin-bottom: 10px;
     }
 
     .tabbar a {
@@ -101,7 +101,7 @@
     /* Main Content Styling */
     .content {
       margin-left: 250px; /* Matches the navbar width */
-      padding: 40px; /* Padding for internal spacing */
+      padding: 40px;
     }
 
     header h1 {
@@ -379,11 +379,53 @@
   </style>
 </head>
 <body>
+  <div class="tabbar">
+    <a href="#" class="active">
+      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
+      <span>Dashboard</span>
+    </a>
+    <a href="#">
+      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
+      <span>Progress</span>
+    </a>
+    <a href="#">
+      <div class="icon"><img class="trophy-icon" src="https://via.placeholder.com/30" alt="Trophy"></div>
+      <span>Achievements</span>
+    </a>
+  </div>
+
   <div class="content">
     <header>
-      <h1>Particle Effect Example</h1>
+      <h1>Particle Effect Example with Full Features</h1>
     </header>
-    <p>Particles are created with a dynamic effect.</p>
+
+    <section>
+      <div class="wizard-progress">
+        <div class="step complete">
+          <div class="node"></div>
+          <span>Step 1</span>
+        </div>
+        <div class="line complete"></div>
+        <div class="step in-progress">
+          <div class="node"></div>
+          <span>Step 2</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements</h2>
+      <div class="achievements">
+        <div class="achievement unlocked">
+          <img class="unlocked" src="https://via.placeholder.com/200" alt="Achievement 1">
+          <p>Achievement 1</p>
+        </div>
+        <div class="achievement locked">
+          <img class="locked" src="https://via.placeholder.com/200" alt="Achievement 2">
+          <p>Achievement 2</p>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script>
